@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <form action="form" id="form">
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" name="" id="username" class="username">
+                <i class='bx bx-check'></i>
+                <i class='bx bx-error'></i>
+                <small>Error Massage</small>
+            </div>
+            <div class="form-control">
+                <label for="Email">Email</label>
+                <input type="text" name="" id="Email" class="Email">
+                <i class='bx bx-check'></i>
+                <i class='bx bx-error'></i>
+                <small>Error Massage</small>
+            </div>
+            <div class="form-control">
+                <label for="password">password</label>
+                <input type="password" name="" id="password" class="password">
+                <i class='bx bx-check'></i>
+                <i class='bx bx-error'></i>
+                <small>Error Massage</small>
+            </div>
+            <div class="form-control">
+                <label for="ConfirmPassword">ConfirmPassword</label>
+                <input type="confirmPassword" name="" id="ConfirmPassword" class="ConfirmPassword">
+                <i class='bx bx-check'></i>
+                <i class='bx bx-error'></i>
+                <small>Error Massage</small>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+
+    
+</body>
+</html>

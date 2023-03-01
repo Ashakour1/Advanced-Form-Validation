@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Roboto+Condensed&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: rgb(216, 237, 239);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+.container{
+    background-color: lightblue;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    width: 350px;
+}
+.container h1{
+    text-align: center;
+    margin-top: 10px;
+}
+form{
+    padding: 30px 40px;
+}
+.form-control{
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.form-control label{
+    display: block;
+    margin-bottom: 6px;
+}
+.form-control input{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 15px;
+    border: 1px solid rgb(86, 86, 86);
+    border-radius: 8px;
+}
+.form-control i.bx-check{
+    position: absolute;
+    text-align: right;
+    font-size: 22px;
+    color:#92e992;
+    top: 36px;
+    right: 10px;
+    bottom: 0;
+    visibility: hidden;
+}
+.form-control i.bx-error{
+    position: absolute;
+    text-align: right;
+    font-size: 22px;
+    color: rgba(253, 38, 1, 0.806);
+    top: 36px;
+    right: 10px;
+    bottom: 0;
+    visibility: hidden;
+}
+.form-control input:focus{
+    outline: none;
+    border: 1px solid #1d1a1a;
+}
+.form-control small{
+    display: block;
+    color:  rgba(253, 38, 1, 0.806);
+    visibility: hidden;
+}
+.btn{
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgb(213, 119, 60);
+    border: 2px solid rgb(214, 126, 71) ;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: block;
+    outline: none;
+}
+.form-control.success input{
+    border: 1px solid #92e992;
+}
+.form-control.error input{
+    border: 1px solid #fd2601ce;
+}
+.form-control.error small{
+    visibility: visible;
+}
